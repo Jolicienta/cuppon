@@ -15,6 +15,12 @@ body {
     padding: 0;
 }
 
+.row {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 @media (min-width: 992px) {
     .row {
         padding-left: 70px;
@@ -26,6 +32,9 @@ body {
 /* Navbar */
 .navbar {
     background-color: #28a745;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 18px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -47,12 +56,28 @@ body {
 
 /* Content */
 #cuerpo img {
-    height: 230px;
+    height: 180px;
     width: auto;
 }
 
-#card_deck_1 {
-    margin-bottom: 40px;
+@media (max-width: 575.98px) {
+    .col-lg {
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    #cuerpo img {
+        height: 230px;
+    }
+
+    #card_deck_1 {
+        margin-bottom: 40px;
+    }
 }
 
 #title {
@@ -93,7 +118,7 @@ body {
     height: 241px;
     padding-top: 25px;
     background-color: #28A745;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .title_coupon {
@@ -103,7 +128,7 @@ body {
     font-weight: 500;
 }
 
-.form-control {
+.form-inline .form-control {
     color: #707070;
     font-weight: 300;
 }
@@ -119,8 +144,11 @@ body {
     background-color: #000000;
 }
 
-
 @media (min-width: 992px) {
+    #coupon {
+        margin-top: 50px;
+    }
+
     .form-inline .form-control {
         width: 400px;
     }
