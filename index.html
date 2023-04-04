@@ -1,161 +1,181 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <title>Cuppon</title>
+    <meta name="author" content="Natalia Campos Godoy">
+    <meta name="description" content="Inscríbete y recibe cupones">
+    <meta name="keywords" content="cupones, descuentos">
+    <!-- CDN de fontawesome  -->
     <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
+    <!-- API de google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Hoja de estilos de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
+</head>
 
-    <!-- NAVEGADOR -->
-    <!-- Aplicación de clase de Bootstrap "text-white" -->
-    <nav class="navbar navbar-expand-lg navbar-dark text-white bg-success">
-      <a class="navbar-brand" href="#">
-        <img id="logo" src="assets/img/logo-white.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Inicio</a>
-        <a class="nav-item nav-link" href="#">Productos</a>
-        <a class="nav-item nav-link" href="#">Contacto</a>
-      </div>
-      </div>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="assets/img/logo-white.png" alt="CUPPON">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- CONTENIDO DE LA PÁGINA -->
-    <section class="cuerpo">
-
-      <!-- Encabezado
-      <div class="row">
-        <div class="col col-sm-12 col-md-12">
-          <p class="titulo">Nuestros Productos</p>
-        </div>
-      </div>-->
-
-      <!-- Menús de productos -->
-      <div class="container">
-
+    <!-- Content -->
+    <div class="container-fluid" id="cuerpo">
         <!-- 1era fila -->
-        <div class="card-deck">
-
-          <!-- Producto 1 -->
-            <div class="card" >
-              <img src="assets/img/cupon-1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> Plumón Coral Fleece estampado en modelo y tamaño a elección </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> Plumones Manolino </p>
-                <p style="font-weight: 300; color: #707070; font-size: 13px; line-height: 15px;"><i class="fas fa-map-marker-alt"></i> 9191 Avenida Vitacura, Chile </p>
-                <hr>
-                <p class="precio1"> $45.990 </p>
-                <p class="precio2"> $22.990 </p>
-              </div>
+        <div class="row" id="card_deck_1">
+            <div class="col">
+                <!-- Producto 1 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-1.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> Plumón Coral Fleece estampado en modelo y tamaño a elección </p>
+                        <p id="brand"> Plumones Manolino </p>
+                        <p id="ubication"><i class="fas fa-map-marker-alt"></i> 9191 Avenida Vitacura, Chile </p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2">$45.990</span><span class="price_2">$22.990</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-          <!-- Producto 2 -->
-            <div class="card">
-              <img src="assets/img/cupon-2.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> Entrada para compartir + platos de fondo + postres + bebestibles </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> V for Vegan </p>
-                <p style="font-weight: 300; color: #707070; font-size: 13px; line-height: 15px;"><i class="fas fa-map-marker-alt"></i> 777 Jesse Pinkman, Chile </p>
-                <hr>
-                <p class="precio1"> $30.990 </p>
-                <p class="precio2"> $12.990 </p>
-              </div>
+            <div class="col">
+                <!-- Producto 2 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-2.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> Entrada para compartir + platos de fondo + postres + bebestibles </p>
+                        <p id="brand"> V for Vegan </p>
+                        <p id="ubication"><i class="fas fa-map-marker-alt"></i> 777 Jesse Pinkman, Chile </p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2">$30.990</span><span class="price_2">$12.990</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-          <!-- Producto 3 -->
-            <div class="card">
-              <img src="assets/img/cupon-3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> Evaluación integral + blanqueamiento dental led + limpieza + fluoración </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> Clínica Dental Quijada </p>
-                <p style="font-weight: 300; color: #707070; font-size: 13px; line-height: 15px;"><i class="fas fa-map-marker-alt"></i> 1342, Blanco Encalada, Chilee </p>
-                <hr>
-                <p class="precio1"> $300.000 </p>
-                <p class="precio2"> $25.990 </p>
-              </div>
+            <div class="col">
+                <!-- Producto 3 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-3.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> Evaluación integral + blanqueamiento dental led + limpieza + fluoración </p>
+                        <p id="brand"> Clínica Dental </p>
+                        <p id="ubication"><i class="fas fa-map-marker-alt"></i> 1342, Blanco Encalada, Chilee </p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2">$300.000</span><span class="price_2">$25.990</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-          </div>
+        </div>
 
         <!-- 2da fila -->
-        <div class="card-deck">
-
-          <!-- Producto 4 -->
-            <div class="card">
-              <img src="assets/img/cupon-4.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> Colación para 2 personas + postre (no incluye bebidas) </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> Suricata almacen </p>
-                <p style="font-weight: 300; color: #707070; font-size: 13px; line-height: 15px;"><i class="fas fa-map-marker-alt"></i> Suricata almacen </p>
-                <hr>
-                <p class="precio1"> $4.200 </p>
-                <p class="precio2"> $2.100 </p>
-              </div>
+        <div class="row">
+            <div class="col">
+                <!-- Producto 4 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-4.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> Colación para 2 personas + postre (no incluye bebidas) </p>
+                        <p id="brand"> Suricata almacen </p>
+                        <p id="ubication"><i class="fas fa-map-marker-alt"></i> 1071 Miguel Claro, Chile </p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2"> $4.200</span><span class="price_2">$2.100</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-          <!-- Producto 5 -->
-            <div class="card">
-              <img src="assets/img/cupon-5.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> 1, 2 o 4 tickets para Stukids. Elige sucursal </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> Stukids Centro de Eventos </p>
-                <p style="font-weight: 300; color: #707070; font-size: 13px; line-height: 15px;"><i class="fas fa-map-marker-alt"></i> 133 El tranque, Chile </p>
-                <hr>
-                <p class="precio1"> $4.000 </p>
-                <p class="precio2"> $2.500 </p>
-              </div>
+            <div class="col">
+                <!-- Producto 5 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-5.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> 1, 2 o 4 tickets para Stukids. Elige sucursal </p>
+                        <p id="brand"> Stukids Centro de Eventos </p>
+                        <p id="ubication"><i class="fas fa-map-marker-alt"></i> 133 El tranque, Chile </p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2">$4.000</span><span class="price_2">$2.500</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-          <!-- Producto 6 -->
-            <div class="card">
-              <img src="assets/img/cupon-6.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p style="font-weight: 300; color: #212529; font-size: 20px; line-height: 24px;margin-bottom: 10px;"> San Pedro de Atacama : 1 o 2 noches en alojamiento a elección </p>
-                <p style="font-weight: 300; color: #707070; font-size: 16px; line-height: 19px; margin-bottom: 2px;"> D-Latam Travel </p>
-                <hr>
-                <p class="precio1"> $80.200 </p>
-                <p class="precio2"> $44.100 </p>
-              </div>
+            <div class="col">
+                <!-- Producto 6 -->
+                <div class="card m-0">
+                    <img src="assets/img/cupon-6.jpg" class="img-fluid card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <p id="title"> San Pedro de Atacama : 1 o 2 noches en alojamiento a elección </p>
+                        <p id="brand"> D-Latam Travel </p>
+                        <p id="ubication"></p>
+                        <hr>
+                        <p class="float-end mb-0">
+                            <span class="price_1 me-2">$80.200</span><span class="price_2">$44.100</span></p>
+                        </p>
+                    </div>
+                </div>
             </div>
 
-          </div>
-
-    </section>
+        </div>
+    </div>
 
     <!-- Sección cupones -->
+    <div class="container-fluid d-flex justify-content-center" id="coupon">
+        <div class="row p-0">
+            <div class="col text-start p-0">
+                <p class="title_coupon">Recibe cupones en tu correo</p>
+                <form class="form-inline text-center">
+                    <input type="text" class="form-control mb-3" placeholder="Nombre">
+                    <input type="text" class="form-control mb-3" placeholder="Correo Electrónico">
+                    <button type="submit" class="btn btn-light mb-2">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <section class="cupones">
-      <p>Recibe cupones en tu correo</p>
-      <form class="form-inline">
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Nombre">
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Correo Electrónico">
-        <button type="submit" class="btn btn-light mb-2">Enviar</button>
-      </form>
-    </section>
+    <!-- FOOTER -->
+    <footer class="text-center d-flex align-items-center">
+        <div class="container">
+            <img id="logo_black" src="assets/img/logo-black.png" alt="CUPPON">
+            <p class="mb-0">© 2018 Cuppon Latam .Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-  <!-- FOOTER -->
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 
-  <footer>
-    <img id="logo-black" src="assets/img/logo-black.png" alt="logo-black">
-    <p>© 2018 Cuppon Latam .Todos los derechos reservados.</p>
-
-  </footer>
-
-
-    <!-- Scripts de JS y JQuery para Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
 </html>
 
-<!-- Jolicienta -->
+<!-- by Natalia Campos -->

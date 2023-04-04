@@ -1,183 +1,143 @@
-/* font-family: 'Roboto', sans-serif; */
-html {
-  margin: 0;
-}
-
+/* RECURSOS USADOS
+font-family: 'Roboto', sans-serif;
+<i class="fa-solid fa-location-dot"></i>
+● #212529;
+● #707070;
+● #F8F9FA o var(--light);
+● #fff o var(--white);
+● #28a745 o var(--success);
+*/
 body {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  body {
-    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
     padding: 0;
-  }
 }
 
-/*BARRA DE NAVEGACIÓN*/
+@media (min-width: 992px) {
+    .row {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
 
+
+/* Navbar */
 .navbar {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
+    background-color: #28a745;
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 70px;
-  }
-}
-
-.navbar-light .navbar-nav .nav-link {
-  margin-right: 30px;
-  text-align: right;
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
 #logo {
-  width: 132px;
-  height: 53px;
+    width: 86px;
 }
 
-/*CUERPO*/
-.cuerpo {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-@media (min-width: 768px) {
-  .cuerpo {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-}
-
-.cuerpo .titulo {
-  font-weight: 700;
-  color: #707070;
-  font-size: 35px;
-  text-align: center;
-  padding-top: 41px;
-  padding-bottom: 29px;
-  margin-bottom: 0px;
-  line-height: 47px;
+@media (min-width: 992px) {
+    .navbar {
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 70px;
+    }
 }
 
 
-
-  .cuerpo .titulo {
-    font-size: 60px;
-    padding-top: 64px;
-    padding-bottom: 77px;
-    margin-bottom: 0px;
-    line-height: 82px;
-  }
-
-  .card-deck {
-    margin-right: -40px;
-    margin-left: -40px;
-    color: #373A3C;
-  }
-
-  .card-deck .card {
-    margin-right: 40px;
-    margin-left: 40px;
-    text-align: left;
-    color: #373A3C;
-  }
-
-  .container .row {
-    margin-bottom: 64px;
-  }
+/* Content */
+#cuerpo img {
+    height: 230px;
+    width: auto;
 }
 
-.card-deck {
-  margin-right: -40px;
-  margin-left: -40px;
-  color: #373A3C;
-  box-sizing: none;
+#card_deck_1 {
+    margin-bottom: 40px;
 }
 
-.card-deck .card {
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: left;
-  color: #373A3C;
-  margin-bottom: 30px;
+#title {
+    height: 72px;
+    color: #212529;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
-.card-deck .card p {
-  margin-bottom: 0;
+#brand {
+    line-height: 19px;
+    margin-bottom: 2px;
 }
 
-.card-deck .precio1 {
-  display: inline-block;
-  font-weight: 300;
-  color: #707070;
-  font-size: 16px;
-  line-height: 19px;
-  margin-right: 20px;
+#brand , .price_1 {
+    color: #707070;
+    font-size: 16px;
 }
 
-.card-deck .precio2 {
-  display: inline-block;
-  font-weight: 500;
-  color: #28A745;
-  font-size: 20px;
-  line-height: 24px;
+#ubication {
+    height: 15px;
+    color: #707070;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
 }
 
-@media (min-width: 768px) {
-  .card-deck .card {
-    margin-bottom: 50px;
-  }
+.price_2 {
+    color: #28A745;
+    font-size: 20px;
+    font-weight: 500;
 }
+
 
 /* Sección cupones */
+#coupon {
+    height: 241px;
+    padding-top: 25px;
+    background-color: #28A745;
+    margin-top: 50px;
+}
 
-.cupones {
-  background-color: #28A745;
-  color: #FFFFFF;
-  font-size: 21px;
-  line-height: 24px;
-  padding: 25px 25px 30px 25px;
-  margin-top: 50px;
+.title_coupon {
+    color: #FFFFFF;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 500;
 }
 
 .form-control {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #707070;
+    color: #707070;
+    font-weight: 300;
 }
 
-@media (min-width: 768px) {
-  .form-inline .form-control {
-    width: 300px;
-  }
+#coupon .btn {
+    width: 113px;
+    color: #212529;
+    font-weight: 500;
 }
 
-.form-inline {
-  display: block;
+#coupon .btn:hover {
+    color: #FFF;
+    background-color: #000000;
 }
 
-/* FOOTER*/
+
+@media (min-width: 992px) {
+    .form-inline .form-control {
+        width: 400px;
+    }
+}
+
+
+/* Footer*/
 footer {
-  height: 118px;
-  text-align: center;
-  color: #707070;
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 300;
-  padding-left: 25px;
-  padding-right: 25px;
+    height: 100px;
+    color: #707070;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-footer #logo-black {
-  width: 82px;
-  padding-top: 24px;
-  padding-bottom: 10px;
+footer #logo_black {
+    width: 82px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 500;
 }
